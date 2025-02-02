@@ -48,7 +48,7 @@ exports.handler = async (event, context) => {
             throw new Error("Failed to update the Gist with new API key");
         }
 
-        // Step 4: Redirect after successful scan
+        // Step 4: Redirect after successful scan and deploy it
         return {
             statusCode: 302,
             headers: {
